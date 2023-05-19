@@ -1,0 +1,27 @@
+@media only screen and (min-width: 650px) {  
+    .timer {
+        font-family: Arial, sans-serif;
+        font-size: 1.6em;
+        margin: auto;
+        max-width: 590px;
+    }  
+}
+
+@media only screen and (max-width: 650px) {  
+    .timer {
+        font-family: Arial, sans-serif;
+        font-size: 1.6em;
+        margin: auto;
+        max-width: 300px;
+    }
+}
+
+.timer span {
+    font-size: 2em;
+    margin: 0 3px 0 15px;
+}
+
+.timer span:first-child {
+    font-size: 2em;
+    margin: 0 3px 0 0;
+}
