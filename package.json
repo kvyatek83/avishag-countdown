@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "npm install && ng build --configuration production && node server.js",
-    "build": "ng build",
+    "build": "npm install && ng build --configuration production && node server.js",
     "ready": "npm install && ng build --configuration production",
     "server": "node server.js",
     "watch": "ng build --watch --configuration development",
