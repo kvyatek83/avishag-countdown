@@ -1,10 +1,10 @@
-<div *ngIf="false" [@fadeInOut]>
+<div *ngIf="loaded$ | async" [@fadeInOut]>
     <app-cofetti-fast></app-cofetti-fast>
     <app-cofetti-slow></app-cofetti-slow>
     <app-main-page></app-main-page>
 </div>
 
-<div *ngIf="true" [@fadeInOut] style="height: 100%;">
+<div *ngIf="!(loaded$ | async)" [@fadeInOut] style="height: 100%;">
     <app-loading></app-loading>
 </div>
 
